@@ -1,0 +1,5 @@
+# Core automation libraries (install inside the virtual environment)
+selenium>=4.15,<5
+pytest>=8.0,<9
+pytest-html>=4.1,<5
+webdriver-manager>=4.0,<5

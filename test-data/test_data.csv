@@ -1,0 +1,13 @@
+data_id,category,username,password,first_name,last_name,postal_code,expected_message
+valid_user,login,standard_user,secret_sauce,,,,
+locked_user,login,locked_out_user,secret_sauce,,,,"Epic sadface: Sorry, this user has been locked out."
+invalid_username,login,invalid_user,secret_sauce,,,,Epic sadface: Username and password do not match any user in this service
+invalid_password,login,standard_user,wrong_password,,,,Epic sadface: Username and password do not match any user in this service
+empty_username,login,,secret_sauce,,,,Epic sadface: Username is required
+empty_password,login,standard_user,,,,,Epic sadface: Password is required
+both_empty,login,,,,,,Epic sadface: Username is required
+checkout_valid,checkout,,,John,Doe,12345,
+checkout_missing_first_name,checkout,,,,Doe,12345,Error: First Name is required
+checkout_missing_last_name,checkout,,,John,,12345,Error: Last Name is required
+checkout_missing_postal_code,checkout,,,John,Doe,,Error: Postal Code is required
+checkout_all_empty,checkout,,,,,,Error: First Name is required
